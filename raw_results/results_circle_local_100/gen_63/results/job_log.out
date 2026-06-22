@@ -1,0 +1,15 @@
+Evaluating program: results\results_circle_local_100/gen_63/main.py
+Saving results to: results\results_circle_local_100/gen_63/results
+==========Running program evaluation 1/1...==========
+Evaluation error: cannot access local variable 'radii' where it is not associated with a value
+Correctness and error status saved to results\results_circle_local_100/gen_63/results\correct.json
+Metrics saved to results\results_circle_local_100/gen_63/results\metrics.json
+Evaluation or Validation failed: cannot access local variable 'radii' where it is not associated with a value
+Metrics:
+  combined_score: 0.0
+  execution_time_mean: 0.0
+  execution_time_std: 0.0
+  num_successful_runs: 0
+  num_valid_runs: 0
+  num_invalid_runs: 0
+  all_validation_errors: []

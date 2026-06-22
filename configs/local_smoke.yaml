@@ -1,0 +1,58 @@
+﻿max_evaluation_jobs: 1
+max_proposal_jobs: 1
+max_db_workers: 1
+verbose: true
+debug: false
+
+evo_config:
+  task_sys_msg: >
+    You are an expert Python programmer and optimization researcher.
+    Improve the 26-circle packing program to maximize the sum of radii.
+    All circles must remain inside the unit square and must not overlap.
+    Preserve required function names, return values, and immutable code.
+    Make substantive algorithmic improvements rather than changing comments.
+
+  llm_models:
+    - "local/qwen2.5-coder:7b@http://localhost:11434/v1"
+
+  llm_dynamic_selection: null
+
+  llm_kwargs:
+    temperatures:
+      - 0.2
+      - 0.7
+    max_tokens: 4096
+
+  patch_types:
+    - diff
+    - full
+
+  patch_type_probs:
+    - 0.7
+    - 0.3
+
+  max_patch_resamples: 2
+  max_patch_attempts: 2
+
+  embedding_model: null
+  novelty_llm_models: null
+  meta_rec_interval: null
+  meta_llm_models: null
+
+  evolve_prompts: false
+  max_api_costs: null
+
+db_config:
+  num_islands: 1
+  archive_size: 10
+  parent_selection_strategy: weighted
+  parent_selection_lambda: 10
+  num_archive_inspirations: 0
+  num_top_k_inspirations: 0
+  migration_interval: 10
+  migration_rate: 0.0
+
+job_config:
+  eval_program_path: evaluate.py
+  time: "00:05:00"
+  numeric_threads_per_job: 1
