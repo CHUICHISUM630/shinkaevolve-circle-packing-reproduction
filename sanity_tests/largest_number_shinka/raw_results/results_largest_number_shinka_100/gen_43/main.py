@@ -1,0 +1,22 @@
+﻿# EVOLVE-BLOCK-START
+def calculate_largest_number():
+    """
+    Helper function to calculate the largest possible finite number.
+    """
+    import sys
+    return sys.float_info.max
+
+def run_task():
+    """
+    Improved program for the largest-number optimisation task.
+    The improved output is the largest possible finite number.
+    """
+    return calculate_largest_number()
+
+if __name__ == "__main__":
+    print(run_task())
+# EVOLVE-BLOCK-END
+
+
+if __name__ == "__main__":
+    print(run_task())

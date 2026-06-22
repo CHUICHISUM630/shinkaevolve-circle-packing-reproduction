@@ -1,0 +1,16 @@
+Evaluating program: results\results_largest_number_shinka_100/gen_49/main.py
+Saving results to: results\results_largest_number_shinka_100/gen_49/results
+==========Running program evaluation 1/1...==========
+==========Run 1/1 completed in 0.00 seconds==========
+Correctness and error status saved to results\results_largest_number_shinka_100/gen_49/results\correct.json
+Metrics saved to results\results_largest_number_shinka_100/gen_49/results\metrics.json
+Evaluation failed: Validation failed: Output is not finite: inf
+Metrics:
+  combined_score: 0.0
+  public: {'output_number': 0.0, 'max_allowed_value': 100.0}
+  private: {'score_definition': 'score equals the returned number if it is between 0 and 100; invalid outputs receive 0'}
+  execution_time_mean: 1.700012944638729e-06
+  execution_time_std: 0.0
+  num_valid_runs: 0
+  num_invalid_runs: 1
+  all_validation_errors: ['Output is not finite: inf']

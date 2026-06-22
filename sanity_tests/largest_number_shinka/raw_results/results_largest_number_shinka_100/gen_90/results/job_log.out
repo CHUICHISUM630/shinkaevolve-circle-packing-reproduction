@@ -1,0 +1,16 @@
+Evaluating program: results\results_largest_number_shinka_100/gen_90/main.py
+Saving results to: results\results_largest_number_shinka_100/gen_90/results
+==========Running program evaluation 1/1...==========
+==========Run 1/1 completed in 0.00 seconds==========
+Correctness and error status saved to results\results_largest_number_shinka_100/gen_90/results\correct.json
+Metrics saved to results\results_largest_number_shinka_100/gen_90/results\metrics.json
+Evaluation completed successfully.
+Metrics:
+  combined_score: 100.0
+  public: {'output_number': 100.0, 'max_allowed_value': 100.0}
+  private: {'score_definition': 'score equals the returned number if it is between 0 and 100; invalid outputs receive 0'}
+  execution_time_mean: 5.00003807246685e-07
+  execution_time_std: 0.0
+  num_valid_runs: 1
+  num_invalid_runs: 0
+  all_validation_errors: []

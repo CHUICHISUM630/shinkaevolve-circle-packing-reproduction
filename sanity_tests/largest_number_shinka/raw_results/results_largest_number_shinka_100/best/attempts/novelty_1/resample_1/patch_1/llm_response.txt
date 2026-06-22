@@ -1,0 +1,27 @@
+<NAME>
+Return the maximum finite number directly without any calculations or logic.
+
+<DESCRIPTION>
+The initial program returns 0, which is the smallest possible finite number. To improve the performance, we can simply return the largest possible finite number, which is 100 in this case. This approach avoids any unnecessary computations and directly achieves the goal of returning the maximum allowed value.
+
+Key insights:
+- The task requires returning the largest possible finite number.
+- The initial program returns 0, which is not the optimal solution.
+- By returning the maximum allowed value (100), we achieve the highest possible score.
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def run_task():
+    """
+    Improved program for the largest-number optimisation task.
+    The improved output is 100.
+    """
+    return 100
+# EVOLVE-BLOCK-END
+
+
+if __name__ == "__main__":
+    print(run_task())
+```
+</CODE>
